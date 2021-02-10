@@ -2,6 +2,7 @@
   --color-background: #1f172b;
   --color-foreground: #c7c7df;
   --color-accent: #f78c6c;
+  --color-accent-shade: #e38163;
 }
 
 html {
@@ -104,20 +105,26 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.6rem;
+  gap: 1.2rem;
   margin: 0 auto;
   text-decoration: none;
-  width: 25.6rem;
+  width: 22.4rem;
   height: 4.8rem;
   text-align: center;
   text-transform: uppercase;
   font-size: 1.6rem;
-  letter-spacing: 1px;
+  letter-spacing: 0.4px;
   border-radius: 5px;
   background: var(--color-accent);
   color: var(--color-background);
+  transition: background 0.4s;
+}
+
+.cta:hover {
+  background: var(--color-accent-shade);
 }
 
 .cta__text {
   line-height: 1;
+  margin-block-start: 2px;
 }
