@@ -5,6 +5,7 @@
   --color-accent: #f78c6c;
   --color-accent-shade: #cf765b;
   --border-color: #c7c7df16;
+  --monofont: 'Clincher', 'Roboto Mono', monospace;
 }
 
 html {
@@ -14,9 +15,10 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-weight: 400;
   background: var(--color-background);
   color: var(--color-foreground);
-  font-family: MonoLisa, monospace;
+  font-family: var(--monofont);
 }
 
 *,
@@ -28,6 +30,15 @@ body {
 * {
   margin: 0;
   padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
 }
 
 a {
