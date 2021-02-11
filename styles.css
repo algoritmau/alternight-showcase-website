@@ -86,12 +86,11 @@ li {
 .hero {
   width: 100%;
   max-width: 102.4rem;
-  margin: 0 auto;
+  margin: 4.8rem auto 6.4rem auto;
   display: flex;
   flex-direction: column;
   gap: 4.8rem;
   align-items: center;
-  margin-block-start: 4.8rem;
 }
 
 .hero__description {
@@ -214,13 +213,103 @@ li {
   line-height: 160%;
 }
 
+.preview {
+  width: 100%;
+  max-width: 102.4rem;
+  margin: 0 auto 6.4rem auto;
+}
+
+.preview__heading {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.preview__title {
+  text-align: center;
+  text-shadow: 1.5px 1.5px 1px #f78c6c80;
+  font-size: 3rem;
+  margin-block-end: 2.4rem;
+}
+
+.preview__subtitle {
+  width: 96%;
+  margin: 0 auto;
+  margin-block-end: 4rem;
+  text-align: center;
+  line-height: 160%;
+  font-size: 1.7rem;
+}
+
+.preview__showcase {
+  width: 100%;
+  max-width: 99.2rem;
+  margin: 0 auto 4.8rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 32rem);
+  gap: 3.2rem;
+  justify-content: center;
+}
+
+.preview__showcase__sample-card {
+  padding: 0.8rem 1.6rem;
+  background: var(--color-background-shade);
+  border-radius: 4px;
+}
+
+.preview__showcase__sample-card__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4.8rem;
+}
+
+.preview__showcase__sample-card__title__text {
+  text-align: center;
+  width: fit-content;
+  margin-block-end: 0.8rem;
+  color: #8e73b5;
+}
+
+.preview__showcase__sample-card__image-wrapper {
+  width: 100%;
+}
+
+.preview__showcase__sample-card__image {
+  width: 100%;
+}
+
+.preview__cta {
+  max-width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 414px) {
+  .preview__showcase {
+    grid-template-columns: repeat(auto-fit, 36rem);
+  }
+}
+
 @media screen and (min-width: 512px) {
   .hero__cta {
     flex-direction: row;
   }
+
+  .preview__showcase {
+    grid-template-columns: repeat(auto-fit, 44rem);
+  }
 }
 
 @media screen and (min-width: 720px) {
+  .header {
+    padding: 0 4rem;
+  }
+
   .hero {
     flex-direction: row;
     padding: 2.4rem 4rem 6.4rem 4rem;
@@ -240,6 +329,14 @@ li {
 
   .hero__cta {
     flex-direction: column;
+  }
+
+  .preview__showcase {
+    grid-template-columns: repeat(auto-fit, 48rem);
+  }
+
+  .preview__cta {
+    flex-direction: row;
   }
 
   .footer__links {
