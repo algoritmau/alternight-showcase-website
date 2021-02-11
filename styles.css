@@ -240,4 +240,28 @@ li {
   .hero__cta {
     flex-direction: column;
   }
+
+  .footer__links {
+    gap: 1.2rem;
+  }
+
+  .footer__link__icon--marketplace {
+    width: 2.8rem;
+    height: 2.52rem;
+  }
+
+  .footer__link__icon--github {
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+
+  .footer__link__icon--twitter {
+    width: 2.7rem;
+    height: 2.33rem;
+  }
+
+  .footer__link__icon--portfolio {
+    width: 2.9rem;
+    height: 2.29rem;
+  }
 }
