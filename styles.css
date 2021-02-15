@@ -71,6 +71,12 @@ li {
   list-style: none;
 }
 
+.product-hunt-badge {
+  position: fixed;
+  bottom: 2.4rem;
+  right: 2.4rem;
+}
+
 .header {
   width: 100%;
   height: 9.6rem;
