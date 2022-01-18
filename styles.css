@@ -241,6 +241,16 @@ li {
   line-height: 160%;
 }
 
+.footer__credits a {
+  text-decoration: none;
+  color: var(--color-accent);
+  transition: color 0.4s ease;
+}
+
+.footer__credits a:hover {
+  color: var(--color-accent-shade);
+}
+
 .preview {
   width: 100%;
   max-width: 102.4rem;
