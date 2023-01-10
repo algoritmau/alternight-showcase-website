@@ -1,4 +1,4 @@
-const productHuntBadge = document.querySelector('.product-hunt-badge');
+const productHuntBadge = document.querySelector('.product-hunt-badge')
 
 const getScrollHeight = () =>
   Math.max(
@@ -8,15 +8,15 @@ const getScrollHeight = () =>
     document.documentElement.offsetHeight,
     document.body.clientHeight,
     document.documentElement.clientHeight
-  );
+  )
 
 window.addEventListener('scroll', () => {
-  let currentScrollHeight = getScrollHeight();
+  let currentScrollHeight = getScrollHeight()
 
   if (
     window.pageYOffset >= currentScrollHeight * 0.7 &&
     !productHuntBadge.hidden
   ) {
-    productHuntBadge.hidden = true;
+    productHuntBadge.hidden = true
   }
-});
+})
