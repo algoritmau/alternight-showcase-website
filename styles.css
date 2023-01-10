@@ -5,7 +5,7 @@
   --color-accent: #f78c6c;
   --color-accent-shade: #cf765b;
   --border-color: #c7c7df16;
-  --monofont: 'Clincher', 'Roboto Mono', monospace;
+  --monofont: 'JetBrains Mono', monospace;
 }
 
 html {
@@ -36,8 +36,8 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 body {
-  font-size: 1.6rem;
-  font-weight: 400;
+  font-size: 1.7rem;
+  font-weight: 300;
   background: var(--color-background);
   color: var(--color-foreground);
   font-family: var(--monofont);
@@ -350,7 +350,8 @@ li {
 
   .hero {
     flex-direction: row;
-    padding: 2.4rem 4rem 6.4rem 4rem;
+    padding: 2.4rem 4rem;
+    height: 58rem;
   }
 
   .hero__description__title {
